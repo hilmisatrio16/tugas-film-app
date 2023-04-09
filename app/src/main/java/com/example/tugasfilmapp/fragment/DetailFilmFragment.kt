@@ -24,15 +24,15 @@ class DetailFilmFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+//
+//        var getNamaFilm = arguments?.getString("NAMA_FILM")
+//        var getTanggalRelease = arguments?.getString("TANGGAL_RELEASE")
+//        var getRating = arguments?.getString("RATING")
+//        var getDeskripsi = arguments?.getString("DESKRIPSI")
+//        var getGambar = arguments?.getInt("GAMBAR")
+        var getData = arguments?.getSerializable("DATA") as ListFilm
 
-        var getNamaFilm = arguments?.getString("NAMA_FILM")
-        var getTanggalRelease = arguments?.getString("TANGGAL_RELEASE")
-        var getRating = arguments?.getString("RATING")
-        var getDeskripsi = arguments?.getString("DESKRIPSI")
-        var getGambar = arguments?.getInt("GAMBAR")
-
-        var listFilm = ListFilm(getNamaFilm.toString(),getTanggalRelease.toString(), getRating.toString(),
-        getDeskripsi.toString(), getGambar.toString().toInt())
+        var listFilm = getData
 
         binding.film = listFilm
     }

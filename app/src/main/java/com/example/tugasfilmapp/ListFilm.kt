@@ -6,4 +6,4 @@ data class ListFilm(
     var rating : String,
     var deskripsiSinopsis : String,
     var gambar : Int
-)
+) : java.io.Serializable

@@ -17,11 +17,12 @@ class FilmAdapter(private var listFilm : ArrayList<ListFilm>) : RecyclerView.Ada
 
             binding.root.setOnClickListener {
                 val bundle = Bundle().apply {
-                    putString("NAMA_FILM", itemData.namaFilm)
-                    putString("TANGGAL_RELEASE", itemData.tanggalRelease)
-                    putString("RATING", itemData.rating)
-                    putString("DESKRIPSI", itemData.deskripsiSinopsis)
-                    putInt("GAMBAR", itemData.gambar)
+//                    putString("NAMA_FILM", itemData.namaFilm)
+//                    putString("TANGGAL_RELEASE", itemData.tanggalRelease)
+//                    putString("RATING", itemData.rating)
+//                    putString("DESKRIPSI", itemData.deskripsiSinopsis)
+//                    putInt("GAMBAR", itemData.gambar)
+                    putSerializable("DATA", itemData)
                 }
 
                 Navigation.findNavController(it).navigate(R.id.action_homeFragment_to_detailFilmFragment, bundle)
