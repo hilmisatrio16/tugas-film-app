@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <data>
+        <variable
+            name="film"
+            type="com.example.tugasfilmapp.ListFilm" />
+    </data>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:contentPadding="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgFilm"
+                android:layout_width="320dp"
+                android:layout_height="240dp"
+                android:imageResource = "@{film.gambar}"
+                android:layout_gravity="center"
+
+                />
+            <TextView
+                android:id="@+id/tvNamaFilm"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{film.namaFilm}"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_marginTop="8dp"
+                android:id="@+id/tvReleaseFilm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{@string/release + film.tanggalRelease}"
+                android:textSize="14sp"
+                />
+            <TextView
+                android:id="@+id/tvRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{@string/rating + film.rating}"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tugas Film App</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="release">Release : </string>
+    <string name="rating">Rating : </string>
+    <string name="film_elephant">
+        The Magician\'s Elephant adalah sebuah film animasi komputer Amerika Serikat yang disutradarai oleh Wendy Rogers dari adaptasi skenario buatan Martin Hynes. Berdasarkan pada novel tahun 2009 bernama sama karya Kate DiCamillo, film tersebut menampilkan Noah Jupe sebagai Peter, seorang pemuda yang mencari saudarinya yang telah lama hilang Adel, yang diisi suaranya oleh Pixie Davies. Bersama dengan mereka, film tersebut juga menampilkan Benedict Wong, Sian Clifford, Brian Tyree Henry, Mandy Patinkin, Miranda Richardson, Cree Summer, dan Lorraine Toussaint. Dianimasikan oleh Animal Logic, film tersebut direncanakan akan didistribusikan oleh Netflix.
+    </string>
+
+</resources>
